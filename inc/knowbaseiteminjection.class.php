@@ -64,7 +64,7 @@ class PluginDatainjectionKnowbaseItemInjection extends KnowbaseItem
 
       $tab                 = Search::getOptions(get_parent_class($this));
 
-      $tab[5]['checktype'] = 'datetime';
+      $tab[121]['checktype'] = 'datetime';
 
       //Remove some options because some fields cannot be imported
       $blacklist     = PluginDatainjectionCommonInjectionLib::getBlacklistedOptions(get_parent_class($this));
@@ -73,7 +73,7 @@ class PluginDatainjectionKnowbaseItemInjection extends KnowbaseItem
       $options['ignore_fields'] = array_merge($blacklist, $notimportable);
 
       $options['displaytype']   = ["dropdown"       => [4],
-                                      "date"           => [5],
+                                      "date"           => [121],
                                       "multiline_text" => [6,7],
                                       "bool"           => [8, 9, 86],
                                       "user"           => [70]];
